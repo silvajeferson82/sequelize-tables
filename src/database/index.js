@@ -2,7 +2,12 @@ import { Sequelize } from "sequelize";
 
 import database from "../config/database";
 
-const models = [];
+import Users from "../app/models/Users/entities/Users"
+import Companies from "../app/models/Company/entities/Companies";
+import WorkingDays from "../app/models/Workingdays/entities/Workingdays";
+import Userworkingdays from "../app/models/UserWorkingDays/entities/Userworkingdays";
+
+const models = [Users, Companies, WorkingDays, Userworkingdays];
 
 class Database {
     constructor() {
